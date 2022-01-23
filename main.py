@@ -40,9 +40,9 @@ def TrainInfo(station):
             scrollText = f"{scrollText}{i}, "
     return scrollText
 
-
-code = input("type in a station code: ")
-print("please wait")
+print("Powered by RealTimeTrains API (https://api.rtt.io/)")
+code = input("Type in a station code: ")
+print("Please wait")
 station = trainInfomation.station(code)
 shownStation = station
 
