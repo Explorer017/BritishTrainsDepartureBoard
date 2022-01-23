@@ -21,7 +21,6 @@ def firstLetterVowelDetect(string):
 def updateInfomation(code):
     global station
     while True:
-        print("Updating")
         station = trainInfomation.station(code)
         if stopThread:
             break
