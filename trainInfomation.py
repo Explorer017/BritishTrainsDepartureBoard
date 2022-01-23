@@ -3,7 +3,13 @@ import requests
 import datetime
 
 # import auth from auth.py
-from auth import auth
+try:
+    from auth import auth
+except:
+    with open("auth.py","w") as a:
+        a.write("auth = ('<username>','<password>')")
+        print("Add login info to auth.py!")
+    quit()
 
 
 class trains:
