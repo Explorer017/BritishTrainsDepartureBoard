@@ -39,7 +39,9 @@ def TrainInfo(station):
             scrollText = f"{scrollText}{i}, "
     return scrollText
 
+print("\n\nNationalRailTrainDepartureBoard")
 print("Powered by RealTimeTrains API (https://api.rtt.io/)")
+print("--------------------------------------------------------")
 code = input("Type in a station code: ")
 print("Please wait")
 station = trainInfomation.station(code)
@@ -66,6 +68,7 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             stopThread = True
+            print("Closing update thread, this may take a few seconds...")
             quit()
     gameDisplay.fill((0,0,0))
 
