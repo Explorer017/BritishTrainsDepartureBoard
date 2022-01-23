@@ -39,7 +39,7 @@ def TrainInfo(station):
             scrollText = f"{scrollText}{i}, "
     return scrollText
 
-print("\n\nNationalRailTrainDepartureBoard")
+print("\n\nBritishTrainsDepartureBoard")
 print("Powered by RealTimeTrains API (https://api.rtt.io/)")
 print("--------------------------------------------------------")
 code = input("Type in a station code: ")
